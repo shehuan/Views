@@ -10,8 +10,13 @@
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent" />-->
 
-    <com.othershe.views.view.StarView
-        android:id="@+id/id_star_view"
+    <!--<com.othershe.views.view.StarView-->
+        <!--android:id="@+id/id_star_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <com.othershe.views.view.PorterDuffView
+        android:id="@+id/id_porterduff_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </RelativeLayout>
