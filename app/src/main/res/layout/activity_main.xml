@@ -5,8 +5,13 @@
     android:layout_height="match_parent"
     tools:context="com.othershe.views.MainActivity">
 
-    <com.othershe.views.view.CircleView
-        android:id="@+id/id_circle_view"
+    <!--<com.othershe.views.view.CircleView-->
+        <!--android:id="@+id/id_circle_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <com.othershe.views.view.StarView
+        android:id="@+id/id_star_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </RelativeLayout>

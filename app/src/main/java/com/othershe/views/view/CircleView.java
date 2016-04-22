@@ -46,7 +46,11 @@ public class CircleView extends View implements Runnable {
 
     private void initPaint() {
         mPaint = new Paint();
-        mPaint.setAntiAlias(true);//抗锯齿，一种让图像边缘显得更圆滑光泽动感的算法
+        /**
+         * 抗锯齿，一种让图像边缘显得更圆滑光泽动感的算法
+         * 抗锯齿是依赖于算法的，算法决定抗锯齿的效率，在我们绘制棱角分明的图像时，比如一个矩形、一张位图，我们不需要打开抗锯齿
+         */
+        mPaint.setAntiAlias(true);
         /**
          * 画笔的三种样式
          * 1、Paint.Style.STROKE:描边
