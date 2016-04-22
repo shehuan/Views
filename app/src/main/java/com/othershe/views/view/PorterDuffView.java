@@ -13,7 +13,7 @@ import com.othershe.views.Utils;
 import com.othershe.views.bo.PorterDuffBO;
 
 /**
- * Src为源图像，意为将要绘制的图像；Dest为目标图像，要把Src绘制到Dest上
+ * Src为源图像，意为将要绘制的图像；Dst为目标图像，要把Src绘制到Dst上
  *
  * PorterDuffXfermode
  *
@@ -52,7 +52,7 @@ public class PorterDuffView extends View {
     //右上bitmap原点坐标(src)
     private int src_x, src_y;
     //左上bitmap原点坐标(dest)
-    private int dest_x, dest_y;
+    private int dst_x, dst_y;
     //合成后的bitmap原点坐标
     private int result_x, result_y;
 
@@ -90,8 +90,8 @@ public class PorterDuffView extends View {
 
         src_x = src_y = 0;
 
-        dest_x = screenW - RECT_SIZE_SMALL;
-        dest_y = 0;
+        dst_x = screenW - RECT_SIZE_SMALL;
+        dst_y = 0;
 
         result_x = (screenW - RECT_SIZE_BIG) / 2;
         result_y = RECT_SIZE_SMALL + ((screenH - RECT_SIZE_SMALL) - RECT_SIZE_BIG) / 2;
@@ -107,7 +107,7 @@ public class PorterDuffView extends View {
         //绘制src bitmap
         canvas.drawBitmap(porterDuffBO.initSrcBitmap(), src_x, src_y, mPaint);
         //绘制dest bitmap
-        canvas.drawBitmap(porterDuffBO.initDestBitmap(), dest_x, dest_y, mPaint);
+        canvas.drawBitmap(porterDuffBO.initDestBitmap(), dst_x, dst_y, mPaint);
 
         //将绘制操作保存到新的图层（离屏缓存）
         int src = canvas.saveLayer(0, 0, screenW, screenH, null, Canvas.ALL_SAVE_FLAG);
