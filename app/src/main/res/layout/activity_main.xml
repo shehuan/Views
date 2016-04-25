@@ -6,17 +6,22 @@
     tools:context="com.othershe.views.MainActivity">
 
     <!--<com.othershe.views.view.CircleView-->
-        <!--android:id="@+id/id_circle_view"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent" />-->
+    <!--android:id="@+id/id_circle_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
 
     <!--<com.othershe.views.view.StarView-->
-        <!--android:id="@+id/id_star_view"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent" />-->
+    <!--android:id="@+id/id_star_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
 
-    <com.othershe.views.view.PorterDuffView
-        android:id="@+id/id_porterduff_view"
+    <!--<com.othershe.views.view.PorterDuffView-->
+    <!--android:id="@+id/id_porterduff_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <com.othershe.views.view.EraserView
+        android:id="@+id/id_eraser_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </RelativeLayout>
