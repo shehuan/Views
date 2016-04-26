@@ -25,8 +25,13 @@
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent" />-->
 
-    <com.othershe.views.view.MaskFilterView
-        android:id="@+id/id_maskfilter_view"
+    <!--<com.othershe.views.view.MaskFilterView-->
+        <!--android:id="@+id/id_maskfilter_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <com.othershe.views.view.PathEffectView
+        android:id="@+id/id_patheffect_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </RelativeLayout>
