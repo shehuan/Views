@@ -34,7 +34,9 @@ public class ECGView extends View {
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG);
         mPaint.setColor(Color.GREEN);
         mPaint.setStrokeWidth(5);
+        //设置画笔的笔触风格,例如圆形、方形等
         mPaint.setStrokeCap(Paint.Cap.ROUND);
+        //设置path结合处的形态
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStyle(Paint.Style.STROKE);
         //为path添加阴影效果
