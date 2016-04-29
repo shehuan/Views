@@ -13,6 +13,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import com.othershe.views.R;
+import com.othershe.views.Utils;
 
 /**
  * BitmapShader
@@ -28,6 +29,7 @@ public class MoveView extends View {
     private Paint mStrokePaint;
     //bitmap着色器
     private BitmapShader mBitmapShader;
+    private Bitmap mBitmap;
 
     private float posX, posY;// 触摸点的XY坐标  
     private static final int CIRCLE_RADIUS = 100;
@@ -39,10 +41,10 @@ public class MoveView extends View {
     public MoveView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        init();
+        init(context);
     }
 
-    private void init() {
+    private void init(Context context) {
         mStrokePaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG);
         mStrokePaint.setColor(0xFF000000);
         mStrokePaint.setStyle(Paint.Style.STROKE);
@@ -50,8 +52,9 @@ public class MoveView extends View {
 
         mFillPaint = new Paint();
 
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.brick);
-        mBitmapShader = new BitmapShader(bitmap, Shader.TileMode.REPEAT, Shader.TileMode.REPEAT);
+        mBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.girl);
+        mBitmap = Bitmap.createScaledBitmap(mBitmap, Utils.getScreenSize(context)[0], Utils.getScreenSize(context)[1], true);
+        mBitmapShader = new BitmapShader(mBitmap, Shader.TileMode.REPEAT, Shader.TileMode.REPEAT);
         mFillPaint.setShader(mBitmapShader);
     }
 
