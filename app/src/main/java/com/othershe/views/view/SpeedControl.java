@@ -270,6 +270,9 @@ public class SpeedControl extends View implements Runnable {
                     speed -= 5;
                     break;
                 case 3://手刹
+                    speed = 0;
+                    break;
+                default:
                     speed -= 1;
                     break;
             }
