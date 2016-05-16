@@ -40,8 +40,13 @@
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent" />-->
 
-    <com.othershe.views.view.MoveView
-        android:id="@+id/id_move_view"
+    <!--<com.othershe.views.view.MoveView-->
+    <!--android:id="@+id/id_move_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <com.othershe.views.view.SpeedControl
+        android:id="@+id/id_speed_control"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

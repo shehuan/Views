@@ -19,4 +19,8 @@ public class Utils {
         size[1] = screenHeight;
         return size;
     }
+
+    public static float getDensityDpi(Context context) {
+        return context.getResources().getDisplayMetrics().densityDpi / 320;
+    }
 }
