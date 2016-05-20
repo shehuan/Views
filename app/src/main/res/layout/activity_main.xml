@@ -45,9 +45,15 @@
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent" />-->
 
-    <com.othershe.views.view.SpeedControl
-        android:id="@+id/id_speed_control"
+    <!--<com.othershe.views.view.SpeedControl-->
+    <!--android:id="@+id/id_speed_control"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <com.othershe.views.view.GapBorderView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="150dp"
+        android:background="#FFAD2C"
+        android:layout_margin="20dp" />
 
 </RelativeLayout>

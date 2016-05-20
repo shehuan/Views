@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
 //        CircleView circleView = (CircleView) findViewById(R.id.id_circle_view);
 //        new Thread(circleView).start();
 
-        SpeedControl speedControl = (SpeedControl) findViewById(R.id.id_speed_control);
-        speedControl.setType(1);
-        new Thread(speedControl).start();
+//        SpeedControl speedControl = (SpeedControl) findViewById(R.id.id_speed_control);
+//        speedControl.setType(1);
+//        new Thread(speedControl).start();
     }
 }
