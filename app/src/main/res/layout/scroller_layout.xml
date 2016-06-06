@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.othershe.views.elasticSlide.ScrollerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="one" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="two" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="three" />
+
+</com.othershe.views.elasticSlide.ScrollerView>
