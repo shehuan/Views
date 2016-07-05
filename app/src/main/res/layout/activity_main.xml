@@ -50,10 +50,15 @@
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent" />-->
 
-    <com.othershe.views.view.GapBorderView
+    <!--<com.othershe.views.view.GapBorderView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:background="#FFAD2C"-->
+    <!--android:layout_margin="20dp" />-->
+
+    <com.othershe.views.view.WaveView
+        android:id="@+id/wave_view"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="#FFAD2C"
-        android:layout_margin="20dp" />
+        android:layout_height="match_parent" />
 
 </RelativeLayout>
