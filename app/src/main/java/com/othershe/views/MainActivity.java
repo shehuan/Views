@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 //        speedControl.setType(1);
 //        new Thread(speedControl).start();
 
-        WaveView waveView = (WaveView) findViewById(R.id.wave_view);
-        waveView.start();
+//        WaveView waveView = (WaveView) findViewById(R.id.wave_view);
+//        waveView.start();
     }
 }
