@@ -65,7 +65,11 @@
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="wrap_content" />-->
 
-    <com.othershe.views.view.SearchView
+    <!--<com.othershe.views.view.SearchView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <com.othershe.views.view.PolyToPoly
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
